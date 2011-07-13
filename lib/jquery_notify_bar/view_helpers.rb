@@ -6,7 +6,7 @@ module JqueryNotifyBar
     end
 
     def jquery_notify_bar(opts = {})
-      opts.reverse_merge! :flash => :notice, :delay => 2000, :animation_speed => 'normal', :close => false, :cls => 'notice'
+      opts.reverse_merge! :flash => :notice, :delay => 2000, :animation_speed => 'normal', :cls => 'notice'
       html = ''
       Array.wrap(opts[:flash]).each do |f|
 				if html = flash[f]
