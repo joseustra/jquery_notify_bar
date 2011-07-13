@@ -12,6 +12,11 @@ In your gem file add:
 
   gem 'jquery_notify_bar'
 
+You need copy this files to your stylesheets and javascripts folder
+
+	http://ustrajunior.com/assets/jquery_notify_bar/stylesheets/jquery.notifyBar.css
+	http://ustrajunior.com/assets/jquery_notify_bar/javascripts/jquery.notifyBar.js
+
 ==Usage
 
 You just need add to helper in your layout page.
