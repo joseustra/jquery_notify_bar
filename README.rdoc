@@ -1,10 +1,10 @@
 =JqueryNotifyBar
 
-This is a simple ruby gem to include jquery.nofityBar from Dmitri Smirnov[http://github.com/dknight/jQuery-Notify-bar] to your rails app.
+This is a simple ruby gem to include jquery.nofityBar from {Dmitri Smirnov}[http://github.com/dknight/jQuery-Notify-bar] to your rails app.
 
 jquery.notifyBar is a twitter like notification bar.
 
-With this gem, all your flash messages will be showed in the nofity bar. Visit the demo page[http://www.dmitri.me/misc/notify/] on Dmitri's website
+With this gem, all your flash messages will be showed in the nofity bar. Visit the {demo page}[http://www.dmitri.me/misc/notify/] on Dmitri's website
 
 ==Installation
 
@@ -24,6 +24,6 @@ the seconde helper is to show the messages, you just need put it in your body
 
   <%= jquery_notify_bar %>
 
-This gem was inspired in the notify_bar[https://github.com/emrekutlu/notify_bar] by İ. Emre Kutlu[https://github.com/emrekutlu]
+This gem was inspired in the notify_bar[https://github.com/emrekutlu/notify_bar] {by İ. Emre Kutlu}[https://github.com/emrekutlu]
 
-Copyright (c) 2011 Jose Carlos Ustra Junior[http://ustrajunior.com], released under the MIT license
+Copyright (c) 2011 {Jose Carlos Ustra Junior}[http://ustrajunior.com], released under the MIT license
