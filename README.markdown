@@ -12,9 +12,9 @@ Installation
 
 In your gem file add:
 
-<pre><code>
+
   gem 'jquery_notify_bar'
-</code></pre>
+
 
 Usage
 =====
@@ -23,15 +23,15 @@ You just need add to helper in your layout page.
 
 The first one you need put in your head section. It will include the required css and javascripts files.
 
-<pre><code>
+
   <%= include_jquery_notify_bar %>
-</code></pre>
+
 
 the seconde helper is to show the messages, you just need put it in your body
 
-<pre><code>
+
   <%= jquery_notify_bar %>
-</code></pre>
+
 
 This gem was inspired in the [notify_bar] by [İ. Emre Kutlu]
 
