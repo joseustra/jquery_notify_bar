@@ -15,6 +15,7 @@ In your gem file add:
 You need copy this files to your stylesheets and javascripts folder
 
 	http://ustrajunior.com/assets/jquery_notify_bar/stylesheets/jquery.notifyBar.css
+	
 	http://ustrajunior.com/assets/jquery_notify_bar/javascripts/jquery.notifyBar.js
 
 ==Usage
@@ -34,7 +35,9 @@ the seconde helper is to show the messages, you just need put it in your body
 You can pass options too:
 
 	<%= jquery_notify_bar :delay => 2000 %>
+	
 	<%= jquery_notify_bar :animation_speed => 'normal' %>
+	
 	<%= jquery_notify_bar :cls => :success %>
 
 This gem was inspired in the notify_bar[https://github.com/emrekutlu/notify_bar] {by İ. Emre Kutlu}[https://github.com/emrekutlu]
