@@ -1,8 +1,9 @@
 module JqueryNotifyBar
   module ViewHelpers
     def include_jquery_notify_bar
-      "<link rel='stylesheet' href='/stylesheets/jquery.notifyBar.css?' type='text/css' media='screen' />".html_safe
-      "<script src='/javascripts/jquery.notifyBar.js' type='text/javascript'></script>".html_safe
+      content = 
+           javascript_include_tag('jquery.notifyBar.js')
+      content << "\n#{stylesheet_link_tag('jquery.notifyBar.css')}".html_safe      
     end
 
     def jquery_notify_bar(opts = {})

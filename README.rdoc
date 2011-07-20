@@ -14,8 +14,8 @@ In your gem file add:
 
 You need copy this files to your stylesheets and javascripts folder
 
-  http://ustrajunior.com/assets/jquery_notify_bar/stylesheets/jquery.notifyBar.css	
-  http://ustrajunior.com/assets/jquery_notify_bar/javascripts/jquery.notifyBar.js
+  https://github.com/ustrajunior/jquery_notify_bar/blob/master/public/javascripts/jquery.notifyBar.js
+	https://github.com/ustrajunior/jquery_notify_bar/blob/master/public/stylesheets/jquery.notifyBar.css
 
 ==Usage
 
