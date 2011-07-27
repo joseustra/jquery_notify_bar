@@ -28,9 +28,9 @@ You need copy this files to your stylesheets and javascripts folder
 
 This helper is to include the js function to generate the notification.
 
-<% flash.each do |key, msg| %>
-  <%= jquery_notify_bar(key, msg) %>
-<% end %>
+ <% flash.each do |key, msg| %>
+   <%= jquery_notify_bar(key, msg) %>
+ <% end %>
 
 ==Parameters
 
@@ -42,9 +42,9 @@ You can pass options too:
 
 	or all at the same time
 
-<% flash.each do |key, msg| %>
-  <%= jquery_notify_bar(key, msg, :cls => :success, :animation_speed => 'normal', :delay => 2000) %>
-<% end %>
+ <% flash.each do |key, msg| %>
+   <%= jquery_notify_bar(key, msg, :cls => :success, :animation_speed => 'normal', :delay => 2000) %>
+ <% end %>
 
 This gem was inspired in the notify_bar[https://github.com/emrekutlu/notify_bar] {by İ. Emre Kutlu}[https://github.com/emrekutlu]
 
