@@ -6,7 +6,7 @@ jquery.notifyBar is a twitter like notification bar.
 
 With this gem, all your flash messages will be showed in the nofity bar. Visit the {demo page}[http://www.dmitri.me/misc/notify/] on Dmitri's website
 
-==Installation
+== Installation
 
 In your gem file add:
 
@@ -17,29 +17,34 @@ You need copy this files to your stylesheets and javascripts folder
   https://github.com/ustrajunior/jquery_notify_bar/blob/master/public/javascripts/jquery.notifyBar.js
   https://github.com/ustrajunior/jquery_notify_bar/blob/master/public/stylesheets/jquery.notifyBar.css
 
-==Usage
+== Usage
 
-You just need add to helper in your layout page.
-
-The first one you need put in your head section. It will include the required css and javascripts files.
+=== Rails 3.0
 
   <%= include_jquery_notify_bar %>
 
-the seconde helper is to show the messages, you just need put it in your body
+=== Rails 3.1
+	In rails 3.1 you don't need include the helper. 
 
-  <%= jquery_notify_bar %>
+This helper is to include the js function to generate the notification.
+
+<% flash.each do |key, msg| %>
+  <%= jquery_notify_bar(key, msg) %>
+<% end %>
 
 ==Parameters
 
 You can pass options too:
 
-  <%= jquery_notify_bar :delay => 2000 %>	
-  <%= jquery_notify_bar :animation_speed => 'normal' %>	
-  <%= jquery_notify_bar :cls => :success %>
+  :cls => :success 
+  :animation_speed => 'normal'
+  :delay => 2000
 
 	or all at the same time
 
-  <%= jquery_notify_bar :delay => 2000, :animation_speed => 'normal', :cls => :success %>
+<% flash.each do |key, msg| %>
+  <%= jquery_notify_bar(key, msg, :cls => :success, :animation_speed => 'normal', :delay => 2000) %>
+<% end %>
 
 This gem was inspired in the notify_bar[https://github.com/emrekutlu/notify_bar] {by İ. Emre Kutlu}[https://github.com/emrekutlu]
 
