@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["ustrajunior@gmail.com"]
   gem.description   = "A simple gem to include jquery.notifyBar to your rails app."
   gem.summary       = "jquery.notifyBar in your app"
-  gem.homepage      = "http://ustrajunior.com/apps/jquery_notify_bar"
+  gem.homepage      = "http://github.com/ustrajunior/jquery_notify_bar"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
