@@ -20,8 +20,8 @@ gem 'jquery_notify_bar'
 	
 Add this files to your javascripts and stylesheets folders
 ```
-https://raw.github.com/ustrajunior/jquery_notify_bar/master/apps/assets/javascripts/jquery.notify_bar.js
-https://raw.github.com/ustrajunior/jquery_notify_bar/master/apps/assets/stylesheets/jquery.notify_bar.css
+https://raw.github.com/ustrajunior/jquery_notify_bar/master/app/assets/javascripts/jquery.notify_bar.js
+https://raw.github.com/ustrajunior/jquery_notify_bar/master/app/assets/stylesheets/jquery.notify_bar.css
 ```
 
 in the head section of your application.html.erb add this helper
