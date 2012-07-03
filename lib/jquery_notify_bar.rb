@@ -1,2 +1,2 @@
 require "jquery_notify_bar/version"
-require 'jquery_notify_bar/railtie' if defined?(Rails)
+require "jquery_notify_bar/engine" if defined? Rails

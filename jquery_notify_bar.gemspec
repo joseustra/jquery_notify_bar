@@ -1,20 +1,21 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "jquery_notify_bar/version"
+require File.expand_path('../lib/jquery_notify_bar/version', __FILE__)
 
-Gem::Specification.new do |s|
-  s.name        = "jquery_notify_bar"
-  s.version     = JqueryNotifyBar::VERSION
-  s.authors     = ["Jose Carlos Ustra Junior"]
-  s.email       = ["contato@ustrajunior.com"]
-  s.homepage    = "http://ustrajunior.com/apps/jquery_notify_bar"
-  s.summary     = %q{jquery.notifyBar in your app}
-  s.description = %q{A simple gem to include jquery.notifyBar to your rails app.}
+Gem::Specification.new do |gem|
+  gem.authors       = ["Jose Carlos Ustra Junior"]
+  gem.email         = ["ustrajunior@gmail.com"]
+  gem.description   = "A simple gem to include jquery.notifyBar to your rails app."
+  gem.summary       = "jquery.notifyBar in your app"
+  gem.homepage      = "http://ustrajunior.com/apps/jquery_notify_bar"
 
-  s.rubyforge_project = "jquery_notify_bar"
-
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  gem.files         = `git ls-files`.split($\)
+  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+  gem.name          = "jquery_notify_bar"
+  gem.require_paths = ["lib"]
+  gem.version       = JqueryNotifyBar::VERSION
+  
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rspec', '~> 2.8.0'
+  gem.add_development_dependency 'jasmine', '>= 1.1.1'
 end
