@@ -43,19 +43,12 @@ On your application.css add
 *= require jquery.notify_bar
 ```
 
-### In your application.html
+### In your application.html.erb
+Add the helper to show the flash message. Remember to add after `<%= javascript_include_tag "application" %>`, because it depends on the jQuery plugin.
 
 ```rhtml
 <%= jquery_notify_bar(flash) %>
 ```
-
-Remember to add the helper after
-
-```rhtml
-<%= javascript_include_tag "application" %>
-```
-
-Because it depends of jQuery.
 
 ### Parameters
 
